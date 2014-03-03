@@ -1,0 +1,11 @@
+{
+  "name": "mailsender",
+  "url": "http://github.com/emibap/mailsender",
+  "license": "MIT",
+  "tags": [],
+  "description": "OpenFL extension that allows mail sending capabilities for iOS and Android",
+  "version": "0.0.1",
+  "releasenote": "Migrated from NME and split from a group of extensions",
+  "contributors": ["emibap"],
+  "dependencies": { "openfl": ""}
+}
