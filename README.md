@@ -1,11 +1,12 @@
-**OpenFL MailSender extension**
+OpenFL MailSender extension
+=============================
 
-This is a native extension for OpenFL which allows to call a native mail window.
+**This is a native extension for OpenFL which allows to call a native mail window.
 Supports setting the subject, body, recipients and also an embedded image.
-(iOS and Android)
+(iOS and Android)**
 
-**Usage**
-
+Installation
+------------
 You can install it directly from haxelib:
 	
 	haxelib install mailsender
@@ -16,8 +17,9 @@ this sources and set its folder as the source using the following command:
 	
 	haxelib dev mailsender path/to/your/downloaded/files
 
-
-Then reference the extension in your xml descriptor file:
+Usage
+------------
+Reference the extension in your xml descriptor file:
 	
 	<haxelib name="mailsender" />
 
@@ -40,7 +42,8 @@ In your project, just call this static method to use it:
 	attImg:BitmapData - Optional image to be embedded at the end of the email. Pass null or skip it if you wish.
 
 
-**Running the test application**
+Running the test application
+------------
 
     cd sample
     lime build application.xml ios
@@ -50,7 +53,8 @@ In your project, just call this static method to use it:
 
 	For the flash target a mailto: URL call is being used.
 
-**Recompiling the extension**
+Recompiling the extension
+------------
 
     lime rebuild mailsender ios
 	
@@ -58,7 +62,8 @@ In your project, just call this static method to use it:
     lime rebuild mailsender android
     
 
-**License:**
+License
+------------
 
 This extension and example license:
 
