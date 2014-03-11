@@ -44,6 +44,8 @@ class MailSender {
 		
 		#elseif (android && openfl)
 		
+		if (jni_call_send_mail == null) jni_call_send_mail = JNI.createStaticMethod ("org.haxe.extension.MailSender", "sendMail", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+		
 		if (attImg != null) {
 			jni_call_send_mail(subject, body, isHTML, strTo, strCC, strBCC, getB64PngData(attImg));
 		} else {
@@ -85,7 +87,7 @@ class MailSender {
 	}
 	
 	
-	private static var jni_call_send_mail = JNI.createStaticMethod ("org.haxe.extension.MailSender", "sendMail", "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+	private static var jni_call_send_mail:Dynamic;
 	
 	#end
 	
